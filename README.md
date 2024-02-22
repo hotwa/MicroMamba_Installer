@@ -24,8 +24,10 @@ If you want to silently install MicroMamba in a custom path, run:
 ```shell
 ./install.sh --silent /your/custom/path
 # or
-bash <(curl -s https://cdn.jsdelivr.net/gh/hotwa/MicroMamba_Installer@main/install.sh) --silent-install
-bash <(wget -qO- https://cdn.jsdelivr.net/gh/hotwa/MicroMamba_Installer@main/install.sh) --silent-install
+echo 1 | bash <(curl -s https://cdn.jsdelivr.net/gh/hotwa/MicroMamba_Installer@main/install.sh)
+
+echo 1 | bash <(wget -qO- https://cdn.jsdelivr.net/gh/hotwa/MicroMamba_Installer@main/install.sh)
+
 ```
 
 Here, /your/custom/path is the custom installation path you chose.
